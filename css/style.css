@@ -1,0 +1,221 @@
+/**********************************************
+ 		style.css - Main CSS Stylesheet 
+ **********************************************/
+
+
+/* ----------- Whole Page Styles ----------- */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+	color: black;
+	background-color: #E0E0E0;
+}
+
+p {
+	font-size: 0.8em;
+}
+
+
+/* ----------- Headings ----------- */
+
+h2, h3, h4, legend {
+	color: black;
+	font-size: 1.1em;
+}
+
+header {
+	background-color: #996699;
+	color: white;
+	padding-top: 25px;
+	padding-bottom: 10px;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 1.2em;
+}
+
+#top-para {
+	margin: 13px;
+}
+
+
+/* ----------- Form Styles ----------- */
+
+fieldset {
+	border: none;
+}
+
+form label {
+	display: block;
+	text-align: left;
+	font-size: 0.8em;
+	margin-top: 10px;
+}
+
+form {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.newsletter {
+	text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	width: 100%;
+	max-width: 100%;
+	border: none;
+	background-color: white;
+	border-radius: 5px;
+	padding: 15px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	color: black;
+	font-family: 'Indie Flower', cursive;
+	-webkit-transition: border-width 0.2s ease;
+	transition: border-width 0.2s ease;
+}
+
+input[id="zip"] {
+	width: 50%;
+	float: left;
+}
+
+label.inline {
+	display: inline;
+}
+
+legend {
+	margin-bottom: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+.newsletter>label {
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #006699;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 10px;
+    border: none;
+}
+
+input:focus,
+textarea:focus {
+	border: 2px solid #006699;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: lightgrey;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: lightgrey;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: lightgrey;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: lightgrey;
+}
+
+.hidden {
+	margin-left: -999em;
+}
+
+
+/* ----------- Horizontal Rule Styles ----------- */
+
+hr { 
+	border: 1px solid black; /* Chrome and Safari */
+	background-color: black; /* Firefox and Opera */
+    color: black; /* IE7+ */
+	width: 90%;
+	margin-top: 3px;
+	margin-bottom: 20px;
+}
+
+hr.thick {
+	border: 2px solid black; /* Chrome and Safari */
+	background-color: black; /* Firefox and Opera */
+    color: black; /* IE7+ */
+	width: 90%;
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+
+
+/* ----------- Footer Styles ----------- */
+
+footer {
+	font-style: italic;
+	margin-bottom: 140px;
+}
+
+
+/* ------------ Media Queries  ----------- */
+
+/* ------------ Tablets  ----------- */
+
+@media only screen and (min-width: 768px) {
+
+	#dob-day,
+	#dob-month,
+	#dob-year {
+		width: 32%;
+	}
+
+	}
+
+
+/* ------------ Desktops  ----------- */
+@media only screen and (min-width: 1020px) {
+
+	#contact-info label {
+		display: inline-block;
+		float: left;
+		width: 25%;
+  		padding-top: 20px;
+	}
+
+	#contact-info input,
+	#state select {
+		display: inline-block;
+		float:left;
+		width: 75%;
+	}
+
+	#state {
+		display: inline-block;
+		float:left;
+		width: 75%;
+	}
+
+	#dob-day,
+	#dob-month,
+	#dob-year {
+		width: 22%;
+	}
+
+	}
